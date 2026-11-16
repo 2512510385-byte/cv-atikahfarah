@@ -1,0 +1,80 @@
+:root {
+  --navy: #1a2a6c;
+  --navy-dark: #101b4a;
+  --accent: #fdbb2d;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: "Segoe UI", Arial, sans-serif; padding-top: 0; }
+section { scroll-margin-top: 70px; }
+
+.bg-navy { background-color: var(--navy); }
+.text-navy { color: var(--navy); }
+
+/* Hero / banner */
+.hero {
+  min-height: 100vh;
+  padding-top: 80px;
+  background: linear-gradient(135deg, var(--navy-dark), var(--navy) 55%, #2e5cb8);
+}
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 6px solid var(--accent);
+  background: #fff;
+  color: var(--navy);
+  font-size: 5rem;
+  font-weight: 700;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+}
+
+/* Judul section */
+.section-title {
+  font-weight: 700;
+  color: var(--navy);
+  position: relative;
+  padding-bottom: 12px;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
+/* Timeline sederhana */
+.timeline-item {
+  border-left: 3px solid var(--navy);
+  padding: 0 0 20px 18px;
+  margin-left: 6px;
+}
+
+/* Proyek */
+.proyek-thumb {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: #fff;
+}
+.bg-grad1 { background: linear-gradient(135deg, #1a2a6c, #b21f1f); }
+.bg-grad2 { background: linear-gradient(135deg, #11998e, #38ef7d); }
+.bg-grad3 { background: linear-gradient(135deg, #fdbb2d, #b21f1f); }
+.card-hover { transition: transform .25s, box-shadow .25s; }
+.card-hover:hover { transform: translateY(-6px); box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15) !important; }
+
+/* Navbar link aktif */
+.navbar .nav-link.active { color: var(--accent) !important; font-weight: 600; }
+
+@media (max-width: 576px) {
+  .profile-img { width: 180px; height: 180px; font-size: 3.5rem; }
+  .hero { text-align: center; }
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV - Atikah Farah</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+    .bg-navy { background-color: #1a2a6c; }
+    .text-navy { color: #1a2a6c; }
+
+    .hero {
+      min-height: 100vh;
+      padding: 100px 0 60px;
+      background: linear-gradient(135deg, #101b4a, #1a2a6c 55%, #2e5cb8);
+      color: #fff;
+    }
+    .foto-profil {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 6px solid #fdbb2d;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      margin: 0 auto 24px auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+      background: #fff;
+    }
+    .logo-kecil {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top center;
+      border: 2px solid #fdbb2d;
+    }
+    .section-title {
+      font-weight: 700;
+      color: #1a2a6c;
+      position: relative;
+      padding-bottom: 12px;
+    }
+    .section-title::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 4px;
+      border-radius: 2px;
+      background: #fdbb2d;
+    }
+    .timeline-item {
+      border-left: 3px solid #1a2a6c;
+      padding: 0 0 20px 18px;
+      margin-left: 6px;
+    }
+    .proyek-thumb {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      color: #fff;
+    }
+    .bg-grad1 { background: linear-gradient(135deg, #1a2a6c, #b21f1f); }
+    .bg-grad2 { background: linear-gradient(135deg, #11998e, #38ef7d); }
+    .bg-grad3 { background: linear-gradient(135deg, #fdbb2d, #b21f1f); }
+    .card-hover { transition: transform .25s, box-shadow .25s; }
+    .card-hover:hover { transform: translateY(-6px); box-shadow: 0 .75rem 1.5rem rgba(0,0,0,.15) !important; }
+    .navbar .nav-link.active { color: #fdbb2d !important; font-weight: 600; }
+    html { scroll-behavior: smooth; }
+    section { scroll-margin-top: 70px; }
+
+    @media (max-width: 576px) {
+      .foto-profil { width: 170px; height: 170px; }
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navMenu" data-bs-offset="80" tabindex="0">
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-navy shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#beranda">
+        <span class="fw-bold">Atikah Farah</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pendidikan">Pendidikan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="beranda" class="hero d-flex align-items-center">
+    <div class="container text-center">
+      <img src="FotoAtikahFarah.png" class="foto-profil" alt="Foto Atikah Farah">
+      <p class="mb-1 fw-semibold" style="color:#fdbb2d;">Halo, saya</p>
+      <h1 class="display-5 fw-bold">Atikah Farah</h1>
+      <h2 class="h5 mb-4">Fakultas Teknologi Informasi &bull; Sistem  Informasi</h2>
+      <p class="lead mb-4 mx-auto" style="max-width:600px;">
+        Saya antusias membangun website yang rapi, responsif, dan mudah digunakan.
+      </p>
+      <a href="#kontak" class="btn btn-warning btn-lg">Hubungi Saya</a>
+    </div>
+  </header>
+
+  <!-- TENTANG -->
+  <section id="tentang" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Tentang Saya</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-7">
+          <p>Saya adalah mahasiswa semester 3 yang tertarik pada pengembangan web. Saya terbiasa menggunakan
+            HTML, CSS, JavaScript, dan Bootstrap untuk membuat tampilan yang menarik dan responsif.
+            Saya suka belajar teknologi baru dan bekerja dalam tim.</p>
+          <p>Ganti teks ini dengan deskripsi singkat tentang diri Anda.</p>
+        </div>
+        <div class="col-lg-5">
+          <ul class="list-group list-group-flush shadow-sm rounded">
+            <li class="list-group-item"><i class="bi bi-person-fill text-primary me-2"></i><strong>Nama:</strong> Atikah Farah</li>
+            <li class="list-group-item"><i class="bi bi-calendar-event text-primary me-2"></i><strong>Tgl Lahir:</strong> 06 Januari 2005</li>
+            <li class="list-group-item"><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>Alamat:</strong> Tangerang, Banten</li>
+            <li class="list-group-item"><i class="bi bi-envelope-fill text-primary me-2"></i><strong>Email:</strong> 2512510385@student.budiluhur.ac.id</li>
+            <li class="list-group-item"><i class="bi bi-telephone-fill text-primary me-2"></i><strong>Telepon:</strong> 0812-3456-7890</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENDIDIKAN -->
+  <section id="pendidikan" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Pendidikan &amp; Pengalaman</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h3 class="h5 mb-3"><i class="bi bi-mortarboard-fill text-primary me-2"></i>Pendidikan</h3>
+          <div class="timeline-item">
+            <span class="badge bg-primary">2022 - Sekarang</span>
+            <h4 class="h6 mt-2">S1 Teknik Informatika</h4>
+            <p class="text-muted mb-0">Nama Universitas Anda</p>
+          </div>
+          <div class="timeline-item">
+            <span class="badge bg-primary">2019 - 2022</span>
+            <h4 class="h6 mt-2">SMA / SMK</h4>
+            <p class="text-muted mb-0">Nama Sekolah Anda</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h5 mb-3"><i class="bi bi-briefcase-fill text-primary me-2"></i>Pengalaman</h3>
+          <div class="timeline-item">
+            <span class="badge bg-success">2025</span>
+            <h4 class="h6 mt-2">Magang Web Developer</h4>
+            <p class="text-muted mb-0">Nama Perusahaan - membuat dan merawat website perusahaan.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="badge bg-success">2024</span>
+            <h4 class="h6 mt-2">Asisten Laboratorium</h4>
+            <p class="text-muted mb-0">Membantu praktikum pemrograman web.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEAHLIAN -->
+  <section id="keahlian" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Keahlian</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <label class="fw-semibold">Microsoft Word</label>
+          <div class="progress mb-3"><div class="progress-bar bg-primary" style="width: 90%">90%</div></div>
+          <label class="fw-semibold">Microsoft Excel</label>
+          <div class="progress mb-3"><div class="progress-bar bg-primary" style="width: 85%">85%</div></div>
+          <label class="fw-semibold">Microsoft Power Point</label>
+          <div class="progress mb-3"><div class="progress-bar bg-primary" style="width: 70%">70%</div></div>
+        </div>
+        <div class="col-md-6">
+          <label class="fw-semibold">Canva</label>
+          <div class="progress mb-3"><div class="progress-bar bg-success" style="width: 65%">65%</div></div>
+          <label class="fw-semibold">Capcut</label>
+          <div class="progress mb-3"><div class="progress-bar bg-success" style="width: 75%">75%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Kontak</h2>
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <p><i class="bi bi-envelope-fill text-primary me-2"></i>email@contoh.com</p>
+          <p><i class="bi bi-telephone-fill text-primary me-2"></i>0812-3456-7890</p>
+          <p><i class="bi bi-geo-alt-fill text-primary me-2"></i>Tangerang Selatan, Banten</p>
+          <div class="fs-3">
+            <a href="#" class="text-navy me-3"><i class="bi bi-github"></i></a>
+            <a href="#" class="text-navy me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-navy me-3"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <form onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda terkirim (simulasi).'); this.reset();">
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control" placeholder="Nama" required></div>
+              <div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required></div>
+              <div class="col-12"><textarea class="form-control" rows="4" placeholder="Pesan" required></textarea></div>
+              <div class="col-12"><button type="submit" class="btn btn-primary px-4">Kirim Pesan</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-white text-center py-3">
+    <small>&copy; 2026 Atikah Farah. Dibuat dengan Bootstrap 5.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
